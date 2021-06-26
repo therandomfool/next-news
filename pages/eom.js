@@ -1,11 +1,22 @@
+import styles from '../styles/EOM.module.css';
+
+
 export const EOM = ({ employee }) => {
 
     console.log(employee)
  return (
      <div className='page-container'>
-         <div>
+         <div className={styles.main}>
              <h1>Employee of the Month</h1>
+            
+            <div className={styles.employeeOfTheMonth}>
+                <img src={employee.image} alt="" />
+                <h3>{ employee.name }</h3>
+                <h6>{ employee.position }</h6>
+                <p>{ employee.description }</p>
 
+
+            </div>
          </div>
      </div>
  )
