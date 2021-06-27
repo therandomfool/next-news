@@ -1,6 +1,7 @@
 import styles from "../styles/EOM.module.css";
 import { Toolbar } from "../components/toolbar";
 
+
 export const EOM = ({ employee }) => {
   console.log(employee);
   return (
@@ -11,7 +12,7 @@ export const EOM = ({ employee }) => {
         <h1>Employee of the Month</h1>
 
         <div className={styles.employeeOfTheMonth}>
-          <img src={employee.image} alt="" />
+          <img src={employee.image} alt="eomImage" />
           <h3>{employee.name}</h3>
           <h6>{employee.position}</h6>
           <p>{employee.description}</p>
